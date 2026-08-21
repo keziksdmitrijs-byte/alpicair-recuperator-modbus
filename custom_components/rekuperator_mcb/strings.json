@@ -1,0 +1,160 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Подключение к рекуператору (Modbus TCP)",
+        "data": {
+          "name": "Название устройства",
+          "host": "IP адрес / хост",
+          "port": "Порт Modbus TCP",
+          "slave_id": "Modbus Slave ID",
+          "scan_interval": "Интервал опроса (сек)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться к контроллеру по Modbus TCP"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Интервал опроса (сек)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heat_exchanger_efficiency": {
+        "name": "КПД теплообменника"
+      },
+      "filter_days_left": {
+        "name": "Осталось дней до замены фильтров"
+      },
+      "current_air_flow": {
+        "name": "Скорость воздушного потока"
+      },
+      "system_mode": {
+        "name": "Режим системы"
+      },
+      "active_alarms_count": {
+        "name": "Текущие ошибки вентиляции"
+      },
+      "exhaust_air_temperature": {
+        "name": "Температура выброса"
+      },
+      "extract_air_temperature": {
+        "name": "Температура вытяжки"
+      },
+      "outdoor_air_temperature": {
+        "name": "Температура наружного воздуха"
+      },
+      "supply_air_temperature": {
+        "name": "Температура притока"
+      },
+      "extract_flow_stage_1": {
+        "name": "Расход вытяжка, факт. ступень 1"
+      },
+      "extract_flow_stage_2": {
+        "name": "Расход вытяжка, факт. ступень 2"
+      },
+      "extract_flow_stage_3": {
+        "name": "Расход вытяжка, факт. ступень 3"
+      },
+      "extract_flow_stage_4": {
+        "name": "Расход вытяжка, факт. ступень 4"
+      },
+      "supply_flow_stage_1": {
+        "name": "Расход приток, факт. ступень 1"
+      },
+      "supply_flow_stage_2": {
+        "name": "Расход приток, факт. ступень 2"
+      },
+      "supply_flow_stage_3": {
+        "name": "Расход приток, факт. ступень 3"
+      },
+      "supply_flow_stage_4": {
+        "name": "Расход приток, факт. ступень 4"
+      }
+    },
+    "button": {
+      "reset_errors": {
+        "name": "Сброс ошибок"
+      }
+    },
+    "switch": {
+      "night_cooling": {
+        "name": "Ночное охлаждение"
+      },
+      "power": {
+        "name": "Питание (Standby)"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Режим работы",
+        "state": {
+          "Защита здания": "Защита здания",
+          "Эконом": "Эконом",
+          "Комфорт": "Комфорт",
+          "Интенсивный обдув": "Интенсивный обдув"
+        }
+      }
+    },
+    "number": {
+      "night_cooling_start_hours": {
+        "name": "Ночное охлаждение: час старта"
+      },
+      "night_cooling_start_mins": {
+        "name": "Ночное охлаждение: минута старта"
+      },
+      "night_cooling_stop_hours": {
+        "name": "Ночное охлаждение: час окончания"
+      },
+      "night_cooling_stop_mins": {
+        "name": "Ночное охлаждение: минута окончания"
+      },
+      "night_cooling_start_extract": {
+        "name": "Ночное охлаждение: t\\u00b0 вытяжки старт"
+      },
+      "night_cooling_stop_extract": {
+        "name": "Ночное охлаждение: t\\u00b0 вытяжки стоп"
+      },
+      "night_cooling_start_outdoor": {
+        "name": "Ночное охлаждение: t\\u00b0 наружного воздуха"
+      },
+      "night_cooling_setpoint": {
+        "name": "Ночное охлаждение: заданная t\\u00b0 притока"
+      },
+      "extract_flow_setpoint_1": {
+        "name": "Расход вытяжка, факт. ступень 1"
+      },
+      "extract_flow_setpoint_2": {
+        "name": "Расход вытяжка, факт. ступень 2"
+      },
+      "extract_flow_setpoint_3": {
+        "name": "Расход вытяжка, факт. ступень 3"
+      },
+      "extract_flow_setpoint_4": {
+        "name": "Расход вытяжка, факт. ступень 4"
+      },
+      "supply_flow_setpoint_1": {
+        "name": "Расход приток, факт. ступень 1"
+      },
+      "supply_flow_setpoint_2": {
+        "name": "Расход приток, факт. ступень 2"
+      },
+      "supply_flow_setpoint_3": {
+        "name": "Расход приток, факт. ступень 3"
+      },
+      "supply_flow_setpoint_4": {
+        "name": "Расход приток, факт. ступень 4"
+      },
+      "target_temperature": {
+        "name": "Целевая температура"
+      }
+    }
+  }
+}
